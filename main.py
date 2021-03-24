@@ -7,6 +7,7 @@ total_bill = float(bill) * (1+float(tip)/100)
 
 result = float(total_bill) / int(num_ppl)
 final_result = round(result,2)
+final_result ="{:.2f}".format(final_result)
 message = f"Each person should pay {final_result}"
 
 print(message)
